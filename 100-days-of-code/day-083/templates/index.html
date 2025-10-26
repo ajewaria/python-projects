@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+<p>I'm a developer who loves building web apps, data tools, and creative software.</p>
+
+<h2>Skills</h2>
+<ul>
+    {% for skill in skills %}
+    <li>{{ skill }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
